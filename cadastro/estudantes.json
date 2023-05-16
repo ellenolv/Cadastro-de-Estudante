@@ -1,0 +1,11 @@
+{
+  "estudantes": [
+      {
+          "id": 1,
+          "name": "Ana Ferreira",
+          "email": "Anaferreira@gmail.com",
+          "curso": "Ciência da Computação",
+          "period": "Manhã"
+      }
+  ]
+}
