@@ -1,6 +1,6 @@
 
 
-<table class="table">
+<table class="table Container" >
     <thead>
       <tr>
         <th scope="col">id</th>
@@ -11,12 +11,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
+      <tr *ngFor="let estudante of estudantes">
+        <th scope="row">{{estudante.id}}</th>
+        <td>{{estudante.nome}}</td>
+        <td>{{estudante.email}}</td>
+        <td>{{estudante.curso}}</td>
+        <td>{{estudante.periodo}}</td>
       </tr>
     </tbody>
   </table>
