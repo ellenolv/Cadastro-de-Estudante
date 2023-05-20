@@ -1,6 +1,41 @@
+<div class="row">
+  <div class="col-8 m-auto">
+    <h1>CADASTRO DE ESTUDANTES</h1>
+    <form [formGroup]="formGroupEstudante">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome: </label>
+        <input type="text" class="form-control"  formControlName="nome" id="nome" placeholder="nome">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label" >Email </label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" formControlName="email" >
+      </div>
+      <div class="mb-3">
+        <label for="curso" class="form-label" formControlName="curso" >Curso </label>
+        <input type="text" class="form-control" id="curso" placeholder="ex: medicina" formControlName="curso" >
+      </div>
+      <div class="mb-3">
+        <label for="periodo" class="form-label">Período </label>
+        <input type="text" class="form-control" id="periodo" placeholder="ex: manhã" formControlName="periodo" >
+      </div>
+      <div class="mb-3 d-flex justify-content-end" >
+        <button type="button"class="btn btn-primary" (click)="save()">Cadastrar</button>
+      </div>
+      
+    
 
 
-<table class="table Container" >
+
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+<table class="table container" >
     <thead>
       <tr>
         <th scope="col">id</th>

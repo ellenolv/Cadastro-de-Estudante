@@ -13,4 +13,7 @@ export class EstudantesService {
   getEstudantes(): Observable<Estudante[]> {
     return this.http.get<Estudante[]>(this.url);
   }
+  save(estudante: Estudante):Observable<Estudante>{
+    return this.http.post<Estudante>(this.url, estudante);
+  }
 }

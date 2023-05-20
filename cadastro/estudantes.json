@@ -1,11 +1,46 @@
 {
   "estudantes": [
-      {
-          "id": 1,
-          "name": "Ana Ferreira",
-          "email": "Anaferreira@gmail.com",
-          "curso": "Ciência da Computação",
-          "period": "Manhã"
-      }
+    {
+      "id": 1,
+      "nome": "Ana Ferreira",
+      "email": "Anaferreira@gmail.com",
+      "curso": "Ciência da Computação",
+      "periodo": "Manhã"
+    },
+    {
+      "id": 2,
+      "nome": "Thaís Dutra",
+      "email": "ThaisDutra@gmail.com",
+      "curso": "Psicologia",
+      "periodo": "Noite"
+    },
+    {
+      "id": 3,
+      "nome": "Lucas Silva",
+      "email": "lucas@gmail.com",
+      "curso": "ads",
+      "periodo": "Noite"
+    },
+    {
+      "id": 4,
+      "nome": "Antonio Moreira",
+      "email": "Antonio@gmail.com",
+      "curso": "ads",
+      "periodo": "Noite"
+    },
+    {
+      "id": 5,
+      "nome": "Juliana Santos",
+      "email": "Juliana@gmail.com ",
+      "curso": "Direiro",
+      "periodo": "Tarde"
+    },
+    {
+      "id": 6,
+      "nome": "Luana",
+      "email": "Luana@gmail.cpm",
+      "curso": "Ciências Sociais",
+      "periodo": "Noite"
+    }
   ]
 }

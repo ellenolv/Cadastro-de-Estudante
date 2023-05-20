@@ -14,6 +14,7 @@ export class EstudantesComponent implements OnInit{
 
   estudantes : Estudante[] = [];
   formGroupEstudante: FormGroup;
+  
   constructor(private estudantesService: EstudantesService, private formBuilder: FormBuilder) { 
     this.formGroupEstudante = this.formBuilder.group({
       id: [],
@@ -36,6 +37,20 @@ export class EstudantesComponent implements OnInit{
         error: () => console.log('Erro ao carregar lista de estudantes')
       }
       );
+  }
+
+  save(){
+    
+      this.estudantesService.save(this.formGroupEstudante.value).subscribe(
+          {
+            //a resposta chega pelo next | client é data
+            next : data => { //tratando o retorno do save |
+              this.estudantes.push(data); //atualiza o array
+              this.formGroupEstudante.reset();
+            }
+          }
+         );
+    
   }
 
 }
